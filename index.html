@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refatoreition Ju's Form</title>
+    <link href="public/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+</head>
+
+<body>
+    <div class="container"> 
+        <div class="wrapper">
+            <div class="navBar">
+                <button data-tab="cadastro" class="active">Cadastro</button>
+
+                <button data-tab="contato" class="">Contato</button>
+            </div>
+
+            <div class="form-container">
+                <form data-conteudo="cadastro" class="active">
+                    <h1 class="title">Cadastro</h1>
+
+                    <div> 
+                        <label for="nomeCadastro">Nome</label>
+                        <input type="text" placeholder="Nome" class="" id="nomeCadastro" name="nomeCadastro" required>
+                    </div>
+
+                    <div> 
+                        <label for="empresaCadastro">Empresa</label>
+                        <input type="text" placeholder="Nome da Empresa" class="" id="empresaCadastro" name="empresaCadastro" required>
+                    </div>
+
+                    <div> 
+                        <label for="emailCadastro">E-mail</label>
+                        <input type="text" placeholder="E-mail" class="" id="emailCadastro" name="emailCadastro" required>
+                    </div>
+
+                    <div> 
+                        <label for="telefoneCadastro">Telefone</label>
+                        <input type="text" placeholder="Telefone" class="" id="telefoneCadastro" name="telefoneCadastro" required>
+                    </div>
+
+                    <div>
+                        <label for="mensagemCadastro">Mensagem</label>
+                        <textarea placeholder="Mensagem" class="" id="mensagemCadastro" name="mensagemCadastro"></textarea>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+
+                <form data-conteudo="contato" class="hidden">
+                    <h1 class="title">Contato</h1>
+
+                    <div> 
+                        <label for="nomeContato">Nome</label>
+                        <input type="text" placeholder="Nome" class="" id="nomeContato" name="nomeContato" required>
+                    </div>
+
+                    <div> 
+                        <label for="empresaContato">Empresa</label>
+                        <input type="text" placeholder="Nome da Empresa" class="" id="empresaContato" name="empresaContato" required>
+                    </div>
+
+                    <div> 
+                        <label for="emailContato">E-mail</label>
+                        <input type="text" placeholder="E-mail" class="" id="emailContato" name="emailContato" required>
+                    </div>
+
+                    <div> 
+                        <label for="telefoneContato">Telefone</label>
+                        <input type="text" placeholder="Telefone" class="" id="telefoneContato" name="telefoneContato" required>
+                    </div>
+
+                    <div>
+                        <label for="mensagemContato">Mensagem</label>
+                        <textarea placeholder="Mensagem" class="" id="mensagemContato" name="mensagemContato"></textarea>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>   
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+@import './variables';
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 458px;
+}
+
+// -------------------------------------------------
+
+.navBar {
+    display: flex;
+    flex-direction: column;
+}
+
+.navBar button {
+    text-transform: uppercase;
+    padding: 20px;
+    transition: all .5s;
+    background-color: $white;
+    border: 2px solid $orange;
+    color: $orange;
+    font-weight: bold;
+    margin: 0 10px;
+    margin-right: -33px;
+    cursor: pointer;
+    margin-left: 50px;
+    font-size: 17px;
+    margin-right: 0;
+}
+
+.navBar .active {
+    margin-right: -33px;
+    display: block;
+    border-width: 4px;
+    color: $white;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: $orange;
+    font-size: 18px;
+}
+
+.navBar button:not(.active):first-child {
+    border-bottom: none;
+    border-right: none;
+}
+
+.navBar button:not(.active):nth-child(2) {
+    border-top: none;
+    border-right: none;
+}
+
+// --------------------------------------------------
+
+.form-container {
+    border: 4px solid $orange;
+    padding: 20px;
+    transition: border .5s, padding .5s;
+}
+
+.form-container form.active {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-container form.hidden {
+    display: none;
+}
+
+//  --------------------------------------------------
+
+.form-container button{
+    background-color: $orange;
+    border: 2px solid $white;
+    box-shadow: 0 0 0px 4px $orange;
+    color: $white;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: background-color 0.5s, border-width 0.5s, color 0.5s;
+    border-radius: 4px;
+}
+
+.form-container button.active{
+    background-color: $orange;
+    border-width: 4px;
+    color: $white;
+    font-size: 18px;
+    display: block;
+    border-radius: 4px;
+}
+
+.form-container button:hover {
+    color: $orange;
+    background-color: $white;
+    cursor: pointer;
+}
+
+//  --------------------------------------------------
+
+.form-container label{
+    display: none;
+}
+
+.form-container ::placeholder{
+    color: $orange;
+}
+
+//   --------------------------------------------------
+
+.form-container input {
+    border: none;
+    border-bottom: solid 2px $orange;
+    color: $orange;
+    font-size: 16px;
+    padding: 6px 12px;    
+    line-height: 1.5;
+}
+
+.form-container form input:focus {
+    box-shadow: none;
+    background-color: $orange2;    
+    outline: none;
+}
+
+//   --------------------------------------------------
+
+.form-container textarea{
+    border: solid 2px $orange;
+    border-radius: 0;
+    resize: none;
+    padding: 6px 19px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-container textarea:focus{
+    outline: none;
+    background-color: $orange2;
+}
+
+
+// ---------------------------------------------------
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: $orange;
+	text-transform: uppercase;
+	font-size: 25px;
+    font-family: 'Roboto', sans-serif
+}
